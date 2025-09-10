@@ -27,7 +27,7 @@ The final par and rep files are consistently named `11.par` and `plot-11.par.rep
 
 See also Section 9, Section 11.6 and Table 5 in the SKJ 2025 stock assessment report.
 
-The `reference.points.table.R` script requires two R packages that are available on GitHub:
+The `reference.points.table.r` script requires two R packages that are available on GitHub:
 
 ```
 install_github("flr/FLCore")
