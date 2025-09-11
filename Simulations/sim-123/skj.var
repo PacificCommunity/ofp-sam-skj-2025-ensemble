@@ -1,0 +1,10 @@
+# Frq file = skj.frq
+# Input par file = 11.par
+# Output par file = hessian
+  1  0.039197923      21.74  adult_rbio(212)
+  2  0.038366669       21.7  adult_rbio(recent)
+  3  0.011617085     0.3546  average_F/Fmsy(recent)
+  4   0.12127261      3.161  average_SB/SBmsy(recent)
+  5            0  5.528e+05  MSY
+  1  2.90113748e-02   -7.72794000e-01  adult_rbio(212) - average_adult_rbio_noeff(40_periods) 2.17403520e+01 2.25131460e+01
+  2  2.50916118e-02   -8.15802000e-01  adult_rbio(recent) - average_adult_rbio_noeff(40_periods) 2.16973440e+01 2.25131460e+01
