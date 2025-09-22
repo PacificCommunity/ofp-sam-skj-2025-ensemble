@@ -6,7 +6,7 @@ library(tidyverse)
 library(magrittr)
 library(FLR4MFCL)
 
-setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
+# setwd(dirname(rstudioapi::getActiveDocumentContext()$path))
 
 source("utilities/read.MFCLVar.r")
 source("utilities/find.biggest.r")
@@ -18,6 +18,7 @@ sim.Dir <- "Simulations/"
 file.names <- list.files(path = sim.Dir)
 
 for(i in 1:length(file.names)){
+  message(i, "/", length(file.names))
   
   cur.Dir <- paste0(sim.Dir, file.names[i], "/")
   rep <- read.MFCLRep(find_biggest_rep(cur.Dir))
@@ -87,4 +88,9 @@ for(i in 1:length(quants)){
   rm(tmp.df)
 }
 
-write.csv(ref.pts.tab, file = "ref.points.table.csv", row.names = F)
+# Reorder columns and round numbers
+refpts <- ref.pts.tab[c("quant", "mean", "median", "min", "q10", "q90", "max")]
+refpts[-1] <- round(refpts[-1], 2)
+refpts[-1][refpts[-1] > 100] <- round(refpts[-1][refpts[-1] > 100])
+
+write.csv(refpts, "refpts.csv", quote = FALSE, row.names = FALSE)
