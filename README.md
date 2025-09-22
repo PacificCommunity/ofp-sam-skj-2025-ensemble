@@ -2,7 +2,7 @@
 
 Download SKJ 2025 assessment report:
 
-**Stock Assessment of Skipjack: 2025**\
+**Stock assessment of skipjack tuna in the western and central Pacific Ocean: 2025**\
 **[WCPFC-SC21-2025/SA-WP-02](https://meetings.wcpfc.int/node/26679)**
 
 Download SKJ 2025 diagnostic model:
@@ -15,7 +15,7 @@ Download SKJ 2025 ensemble results:
 
 ## Uncertainty
 
-The SKJ 2025 assessment uncertainty was estimated using a Monte Carlo model ensemble approach in which 271 models incorporated uncertainty in average natural mortality, stock-recruitment steepness and estimation error for individual models:
+The SKJ 2025 assessment uncertainty was estimated using a Monte Carlo model ensemble approach in which 271 models incorporated uncertainty in average natural mortality, stock-recruitment steepness and estimation error for individual models.
 
 ## Ensemble results
 
